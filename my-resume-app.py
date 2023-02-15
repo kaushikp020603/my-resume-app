@@ -19,7 +19,7 @@ questions = [
 ]
 
 # Define the template file
-template_file = "/Users/afnan/Desktop/Resume:Cv-Gen/resume_template.docx"
+template_file = "resume_template.docx"
 
 # Define helper functions for rendering the form and generating the resume
 def render_form():
