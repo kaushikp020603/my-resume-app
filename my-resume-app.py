@@ -6,6 +6,7 @@ from io import BytesIO
 questions = [
     "What is your full name?",
     "What is your email address?",
+    "provide your linkedIn Profile?",
     "What is your phone number?",
     "What is your current job title?",
     "Add a summary about yourself",
@@ -14,7 +15,6 @@ questions = [
     "What is your education background?",
     "What are your certifications and awards?",
     "What is your desired job position?",
-    "What are your hobbies and interests?",
     "Do you have any references? If so, please provide their contact information."
 ]
 
@@ -42,15 +42,15 @@ def generate_resume(responses):
     context = {
         'full_name': responses[0],
         'email': responses[1],
-        'phone_number': responses[2],
-        'current_job_title': responses[3],
-        'summary': responses[4],
-        'work_experience': responses[5],
-        'key_skills': responses[6],
-        'education_background': responses[7],
-        'certifications_awards': responses[8],
-        'desired_job_position': responses[9],
-        'hobbies_interests': responses[10],
+        'linkedIn_Profile': responses[2],
+        'phone_number': responses[3],
+        'current_job_title': responses[4],
+        'summary': responses[5],
+        'work_experience': responses[6],
+        'key_skills': responses[7],
+        'education_background': responses[8],
+        'certifications_awards': responses[9],
+        'desired_job_position': responses[10],
         'references': responses[11]
     }
     doc.render(context)
