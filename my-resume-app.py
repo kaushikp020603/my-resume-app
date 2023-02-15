@@ -8,6 +8,7 @@ questions = [
     "What is your email address?",
     "What is your phone number?",
     "What is your current job title?",
+    "Add a summary about yourself",
     "What is your work experience?",
     "What are your key skills?",
     "What is your education background?",
@@ -43,13 +44,14 @@ def generate_resume(responses):
         'email': responses[1],
         'phone_number': responses[2],
         'current_job_title': responses[3],
-        'work_experience': responses[4],
-        'key_skills': responses[5],
-        'education_background': responses[6],
-        'certifications_awards': responses[7],
-        'desired_job_position': responses[8],
-        'hobbies_interests': responses[9],
-        'references': responses[10]
+        'summary': responses[4],
+        'work_experience': responses[5],
+        'key_skills': responses[6],
+        'education_background': responses[7],
+        'certifications_awards': responses[8],
+        'desired_job_position': responses[9],
+        'hobbies_interests': responses[10],
+        'references': responses[11]
     }
     doc.render(context)
     doc_bytes = BytesIO()
